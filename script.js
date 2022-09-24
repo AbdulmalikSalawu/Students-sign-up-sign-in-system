@@ -35,6 +35,15 @@ function mySignUp(){
     // }
     localStorage.setItem("studentDetails", JSON.stringify(allStudent))
 }
+function resultcheck(){
+    alert("session result not out yet")
+}
+function tuitionpay(){
+    alert("deadline for tuition payment closed")
+}
+function coursereg(){
+    alert("course registration has ended for the semester")
+}
 function search(){
     //console.log (allStudent[searching.value])
     var confirmSearch = searching.value
@@ -76,7 +85,7 @@ function userLogin(){
     const studentPage =()=>{
         var allStudent = JSON.parse(localStorage.getItem("studentDetails"))
         allStudent.map((_,ind)=>{
-        studentName.innerHTML = `Hi, ${allStudent[ind].firstName} 😎`
+        studentName.innerHTML = `Hi, ${allStudent[ind].firstName} 😎, Welcome to your dashboard📙💼`
     })
 }
     function checkStudents(){

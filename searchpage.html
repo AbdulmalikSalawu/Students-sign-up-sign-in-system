@@ -9,14 +9,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body onload="studentPage()">
-        <p id="studentName" class="text-center text-white fs-1 mt-3"></p>
+        <p id="studentName" class="text-center text-white fs-1 mt-5"></p>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-sm-6 ms-lg-5 mt-3 col-md-6 col-lg-3 flex-items border-none text-center " onclick="resultcheck()">Check Result</div>
+                <div class="col-sm-6 col-md-6 col-lg-4 mt-3 flex-items ms-3 border-none text-center" onclick="coursereg()">Course Registration</div>
+                <div class="col-sm-6 col-md-6 col-lg-3 mt-3 flex-items ms-3 border-none text-center" onclick="tuitionpay()">Pay tuition</div>
+            </div>
+        </div>
+        <button class="m-auto d-block border-none py-3 studentcheck mt-4 rounded-pill " onclick="checkStudents()">Check Matric List🤵</button>
         <input class="mt-5 col-3 py-4 look bg-white text-center look m-auto d-block rounded-pill shadow-lg" type="text" placeholder="looking for what?" id="searching"><br><br>
-        <button class="mt-5 col-2 py-2 searchbutton black fw-bold text-white m-auto d-block fs-5" onclick="search()">SEARCH</button>
+        <button class="mt-2 col-2 py-2 searchbutton black fw-bold text-white m-auto d-block fs-5" onclick="search()">SEARCH</button>
+
+    </div>
 
     <div class="col-sm-6 col-lg-4 fw-bold box m-auto shadow-lg">
         <p class="fs-4 p-4 mt-5" id="disp">your search result will display here!</p>
     </div>
-    <button class="m-auto d-block border-none p-3 studentcheck" onclick="checkStudents()">Check All Students</button>
     <script src="script.js"></script>
 </body>
 </html>

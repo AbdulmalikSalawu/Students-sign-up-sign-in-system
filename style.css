@@ -24,6 +24,17 @@ body{
     margin-top: 10px !important;
     border-radius: 18px;
 }
+.flex-items{
+    background-color: rgba(0, 0, 0, 90%);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 30px;
+    color: white;
+    font-family: cursive;
+}
+.flex-items:hover{
+    background-color: rgba(0, 0, 0, 60%);;
+}
 input{
     height: 40px;
     background-color: #c5bebe;
@@ -52,11 +63,14 @@ input{
     background-color: black;
 }
 .studentcheck{
-    border-radius: 5px;
-    background-color: rgb(114, 114, 216);
-    font-size: 18px;
-    font-weight: bold;
+    height: 60px;
+    background-color: rgb(31, 1, 1);
+    color: white;
+    font-size: 19px;
     border: none;
+}
+.studentcheck:hover{
+    background-color: rgb(85, 12, 12);
 }
 p{
     font-size: 18px;
@@ -106,10 +120,6 @@ p{
     }
 }
     @media screen and (max-width: 420px) {
-        body{
-            overflow: hidden !important;
-            /* height: 200px !important; */
-        }
         .signupbox{
             margin-top: 12% !important;
             width: 85%;
@@ -118,13 +128,19 @@ p{
         }
         body{
             background-image: url(bimg.jpg);
-            height: 700px;
+            height: 900px;
         }
         .conta{
             margin-top: 0px !important;
            
         }
-        
+        .flex-items{
+            width: 80%;
+            margin: auto;
+            margin: 0 !important;
+            margin-left: 40px !important;
+            margin-top: 20px !important;
+        }
         input, .signups{
             width: 75% !important;
             padding: 10px;
