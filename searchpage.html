@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="studentPage()">
+        <p id="studentName" class="text-center text-white fs-1 mt-3"></p>
+        <input class="mt-5 col-3 py-4 look bg-white text-center look m-auto d-block rounded-pill shadow-lg" type="text" placeholder="looking for what?" id="searching"><br><br>
+        <button class="mt-5 col-2 py-2 searchbutton black fw-bold text-white m-auto d-block fs-5" onclick="search()">SEARCH</button>
+
+    <div class="col-sm-6 col-lg-4 fw-bold box m-auto shadow-lg">
+        <p class="fs-4 p-4 mt-5" id="disp">your search result will display here!</p>
+    </div>
+    <button class="m-auto d-block border-none p-3 studentcheck" onclick="checkStudents()">Check All Students</button>
+    <script src="script.js"></script>
+</body>
+</html>

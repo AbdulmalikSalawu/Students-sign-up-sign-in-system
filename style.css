@@ -1,0 +1,151 @@
+body{
+    background-image: url(bimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+.input1{
+    border: 2.5px solid #d3be64 !important;
+}
+.conta, .logincont{
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.9px);
+    -webkit-backdrop-filter: blur(1.9px);
+    border: 1px solid rgba(255, 255, 255, 0.26);
+}
+.signup, .logi1{
+    color: #d3be64 !important;
+    font-weight: bolder !important;
+}
+.black{
+    margin-top: 10px !important;
+    border-radius: 18px;
+}
+input{
+    height: 40px;
+    background-color: #c5bebe;
+    color: black;
+    border: 3px solid rgb(180, 173, 173);
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+#searching{
+    background-color: rgb(212, 203, 203) !important;
+}
+.signups{
+    background-color: rgb(114, 114, 216);
+    border: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.look{
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+}
+.searchbutton{
+    border-radius: 5px;
+    background-color: black;
+}
+.studentcheck{
+    border-radius: 5px;
+    background-color: rgb(114, 114, 216);
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+}
+p{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.oruko{
+    position: relative;
+    top: 10px;
+}
+#disp{
+    min-height: 200px;
+    margin-top: 200px;
+    border-radius: 20px;
+    background-color: rgb(179, 165, 165);
+}
+.logincont{
+    margin-top: 100px !important;
+}
+
+@media screen and (max-width: 900px) {
+    body{
+        background-image: url(bimg.jpg);
+        height: 900px;
+    }
+    .signup{
+        font-size: 17px !important;
+    }
+    input{
+        height: 30px;
+    }
+    .signups, p, input{
+        font-size: 16px;
+    }
+    button{
+        height: 40px;
+    }
+    .box{
+        margin: auto;
+        width: 80%;
+    }
+    .look{
+        width: 50%;
+    }
+    .searchbutton{
+        width: 40% !important;
+       font-size: 18px !important;
+    }
+}
+    @media screen and (max-width: 420px) {
+        body{
+            overflow: hidden !important;
+            /* height: 200px !important; */
+        }
+        .signupbox{
+            margin-top: 12% !important;
+            width: 85%;
+            position: relative;
+            right: 5%;
+        }
+        body{
+            background-image: url(bimg.jpg);
+            height: 700px;
+        }
+        .conta{
+            margin-top: 0px !important;
+           
+        }
+        
+        input, .signups{
+            width: 75% !important;
+            padding: 10px;
+            height: 36px;
+        }
+        .oruko{
+            font-size: 18px;
+        }
+        .logincont{
+            width: 92% !important;
+        }
+        .logi{
+            font-size: 16px !important;
+        }
+        .logi1{
+            font-size: 14px !important;
+        }
+    }
+    @media screen and (min-width:900px){
+        .logincont{
+            width: 30% !important;
+        }
+    }
+
