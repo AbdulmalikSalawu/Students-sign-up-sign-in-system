@@ -10,7 +10,7 @@ function mySignUp(){
         firstName:firstname.value, lastName:lastname.value, Email:email.value, Password:password.value 
     }
     // console.log(allStudent)
-    if((firstName = firstname.value) && (lastName = lastname.value) && (Email = email.value) && (Password = password.value) && (regexForEmail.test(email.value)== true) && (regexForName.test(firstname.value)==true)){
+    if((firstName = firstname.value) && (lastName = lastname.value) && (Email = email.value) && (Password = password.value)){
         window.location.href = "login.html", 
         allStudent.push(ourStudent), 
         firstname.value ="", 
@@ -24,15 +24,15 @@ function mySignUp(){
     // if(regexForName.test(lastname.value)==false){
     //     validateName2.innerHTML ="lastname is incorrect!"
     // }
-    if(regexForEmail.test(email.value)== false){
-        validateEmail.innerHTML = "input the right email!"
-    }
-    if(regexForPassword.test(password.value)==false){
-        validatePassword.innerHTML = "password must be up to 4 digits"
-    }
-    // else {
-    //     alert("Please fill in the form correctly")
+    // if(regexForEmail.test(email.value)== false){
+    //     validateEmail.innerHTML = "input the right email!"
     // }
+    // if(regexForPassword.test(password.value)==false){
+    //     validatePassword.innerHTML = "password must be up to 4 digits"
+    // }
+    else {
+        alert("Please fill in the required details")
+    }
     localStorage.setItem("studentDetails", JSON.stringify(allStudent))
 }
 function resultcheck(){
